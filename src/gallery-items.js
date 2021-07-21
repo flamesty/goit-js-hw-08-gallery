@@ -60,7 +60,7 @@ function onGallaryContainerClick(event) {
 
 
 
-// Closed modal 
+// Закрыть модалку
 
 modalClose.addEventListener('click', onModalCloseClick);
 
@@ -74,7 +74,7 @@ function onModalCloseClick(_event) {
 }
 
 
-// Closed modal esc.
+// Закрытый модальный esc.
 
 document.addEventListener('keydown', escModalClose);
 function escModalClose(event) {
