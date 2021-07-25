@@ -5,7 +5,7 @@ const modal = document.querySelector(".js-lightbox");
 const modalClose = document.querySelector('[data-action="close-lightbox"]');
 const modalOriginalImage = document.querySelector(".lightbox__image")
 
-// Added murkup gallery
+// Добавлен murkup gallery
 
 const imgMarkup = createImageCardsMarkup(images);
 galleryContainer.innerHTML = imgMarkup;
@@ -36,10 +36,10 @@ function createImageCardsMarkup(images) {
 
 // Открытие модальное окно 
 
-galleryContainer.addEventListener('click', onGallaryContainerClick)
+galleryContainer.addEventListener('click', onGalleryContainerClick)
 
 
-function onGallaryContainerClick(event) {
+function onGalleryContainerClick(event) {
 
     event.preventDefault()
 
@@ -58,8 +58,6 @@ function onGallaryContainerClick(event) {
     console.log(urlOrigImg);
 }
 
-
-
 // Закрыть модалку
 
 modalClose.addEventListener('click', onModalCloseClick);
@@ -73,7 +71,6 @@ function onModalCloseClick(_event) {
     // console.log("close", modalClose);
 }
 
-
 // Закрытый модальный esc.
 
 document.addEventListener('keydown', escModalClose);
@@ -85,9 +82,7 @@ function escModalClose(event) {
     return
 };
 
-
-
-// Закрытие модалки кликом по полю модалки ---------------------
+// Закрытие модалки кликом по полю модалки 
 
 modal.addEventListener('click', onOutModalWindowClick);
 
@@ -100,7 +95,7 @@ function onOutModalWindowClick(event) {
     modalOriginalImage.src = ''
 }
 
-// Слайдшоу стрелками  ArrowLeft || ArrowRight---------------------
+// Слайдшоу стрелками 
 
 const arrImgs = [];
 images.forEach(({ original }) => {
