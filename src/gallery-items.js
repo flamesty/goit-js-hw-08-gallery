@@ -5,7 +5,7 @@ const modal = document.querySelector(".js-lightbox");
 const modalClose = document.querySelector('[data-action="close-lightbox"]');
 const modalOriginalImage = document.querySelector(".lightbox__image")
 
-// Добавлен murkup gallery
+// Добавлен murkup галерея
 
 const imgMarkup = createImageCardsMarkup(images);
 galleryContainer.innerHTML = imgMarkup;
