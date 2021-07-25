@@ -14,7 +14,6 @@ galleryContainer.innerHTML = imgMarkup;
 function createImageCardsMarkup(images) {
     return images
         .map(({ preview, original, description }) => {
-
             return `
             <li class="gallery__item">
                 <a
